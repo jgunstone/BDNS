@@ -98,6 +98,13 @@
     "text": "Building Device and Asset Naming Standards initiative\nStatus: release 1.1.0\n\n\nAbbreviations Register\n\n\n\n\n\n\n\n\n\n    \n        \n        \n        \n        \n        \n        \n        \n        \n    \n    \n   \n    \n      \n  \n        \n    \n    \n  \n        \n    \n    \n  \n        \n    \n      \n  \n        \n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n        \n    \n\n\n\n\nThis is the init_notebook_mode cell from ITables v2.1.4\n(you should not see this message - is your notebook trusted?)\n\n\n\n\n\n\n\n    \n      \n      asset_description\n      asset_abbreviation\n      dbo_entity_type\n      ifc_class\n      ifc_type\n      can_be_connected\n    \n  \n\n\n\n    \n        \n        \n        \n        \n        \n        \n        \n        \n    \n    \n   \n    \n      \n  \n        \n    \n    \n  \n        \n    \n    \n  \n        \n    \n      \n  \n        \n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n        \n    \n\n\n\n\nLoading ITables v2.1.4 from the init_notebook_mode cell...\n(need help?)"
   },
   {
+    "objectID": "release.html",
+    "href": "release.html",
+    "title": "",
+    "section": "",
+    "text": "Status: release 272-build-gh-pages"
+  },
+  {
     "objectID": "BDNS_Scoping_guidelines_and_principles.html",
     "href": "BDNS_Scoping_guidelines_and_principles.html",
     "title": "Building Device and Asset Naming Standards initiative",
