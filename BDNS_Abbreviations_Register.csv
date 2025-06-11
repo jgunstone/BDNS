@@ -115,13 +115,13 @@ chiller - water cooled chiller,WCCH,1,HVAC/CH,IfcChillerWATERCOOLED,IfcChillerWA
 cleaning - floor cleaner scrubber dryer,FCSD,0,,IfcElectricAppliance,IfcElectricAppliance
 cleaning - standalone laundry tumble dryer,TDY,0,,IfcElectricApplianceTUMBLEDRYER,IfcElectricApplianceTUMBLEDRYER
 cleaning - standalone laundry washing mashine,WSH,0,,IfcElectricApplianceWASHINGMACHINE,IfcElectricApplianceWASHINGMACHINE
-coil,COIL,0,,"IfcCoilHYDRONICCOIL,IfcCoil",IfcCoil
+coil,COIL,0,,IfcCoil,IfcCoil
 coil - cooling coil,CC,0,,IfcCoilWATERCOOLINGCOIL,IfcCoilWATERCOOLINGCOIL
 coil - dx reversible coil,DXC,0,,IfcCoilDXCOOLINGCOIL,IfcCoilDXCOOLINGCOIL
 coil - frost or preheat coil,PHC,0,,IfcCoilHYDRONICCOIL,IfcCoilHYDRONICCOIL
 coil - heating coil,HC,0,,IfcCoilWATERHEATINGCOIL,IfcCoilWATERHEATINGCOIL
 coil - reheat coil,RHC,0,,IfcCoilHYDRONICCOIL,IfcCoilHYDRONICCOIL
-coil - run around coil,RAC,0,,IfcAirToAirHeatRecoveryRUNAROUNDCOIL,IfcAirToAirHeatRecoveryRUNAROUNDCOIL
+coil - run around coil,RAC,0,,IfcAirToAirHeatRecoveryRUNAROUNDCOILLOOP,IfcAirToAirHeatRecoveryRUNAROUNDCOIL
 communication appliance - printing device,PRNTR,0,,IfcCommunicationsAppliancePRINTER,IfcElectricAppliancePRINTER
 communication gateway,CGW,1,,IfcCommunicationsApplianceGATEWAY,IfcElectricAppliance
 compressor,CMP,1,HVAC/CMP,IfcCompressor,IfcCompressor
@@ -505,6 +505,7 @@ outlet - duplex outlets,DXO,0,,IfcOutletPOWEROUTLET,IfcOutletPOWEROUTLET
 outlet - floor box,FLRB,0,,IfcOutlet,IfcOutlet
 outlet - floor duplex outlet,FLRDX,0,,IfcOutletDATAOUTLET,IfcOutletCOMMUNICATIONSOUTLET
 outlet - floor quad outlet,FLRQD,0,,IfcOutletDATAOUTLET,IfcOutletCOMMUNICATIONSOUTLET
+outlet - industrial (commando) socket outlet,INSO,0,,IfcOutletPOWEROUTLET,IfcOutletPOWEROUTLET
 outlet - linear electric receptacle,LER,0,,IfcOutlet,IfcOutlet
 outlet - single switched socket outlet,SSSO,0,,IfcOutletPOWEROUTLET,IfcOutletPOWEROUTLET
 outlet - single unswitched socket outlet,SSO,0,,IfcOutletPOWEROUTLET,IfcOutletPOWEROUTLET
@@ -692,6 +693,7 @@ valve - blowdown valve,BDV,0,HVAC/VLV,IfcValve,IfcValve
 valve - butterfly valve,BFV,0,HVAC/VLV,IfcValve,IfcValve
 valve - bypass valve,BYV,0,HVAC/VLV,IfcValveDIVERTING,IfcValveDIVERTING
 valve - check valve,CKV,0,HVAC/VLV,IfcValveCHECK,IfcValveCHECK
+valve - check valve sprinkler,CKVS,0,,IfcValveCHECK,IfcValveCHECK
 valve - chilled water valve,CHWV,0,HVAC/VLV,IfcValve,IfcValve
 valve - condenser water valve,CDWV,0,HVAC/VLV,IfcValve,IfcValve
 valve - control valve,CV,0,HVAC/VLV,IfcValve,IfcValve
@@ -747,3 +749,48 @@ water treatment - dosing pot,DPOT,0,,IfcTank,IfcTank
 water treatment - electro magnetic water conditioner,EMWC,0,,IfcFilterWATERFILTER,IfcFilterWATERFILTER
 weather station,WST,1,HVAC/WEATHER,IfcUnitaryControlElementWEATHERSTATION,IfcElectricDistributionPoint
 window,WD,0,,IfcWindow,IfcWindowStyle
+system - airconditioning,AIRCON,0,,IfcDistributionSystemAIRCONDITIONING,
+system - catenary_system,CATNY,0,,IfcDistributionSystemCATENARY_SYSTEM,
+system - chemical,CHEM,0,,IfcDistributionSystemCHEMICAL,
+system - chilledwater,CHW,0,,IfcDistributionSystemCHILLEDWATER,
+system - communication,COMMS,0,,IfcDistributionSystemCOMMUNICATION,
+system - compressedair,CPAIR,0,,IfcDistributionSystemCOMPRESSEDAIR,
+system - condenserwater,CDW,0,,IfcDistributionSystemCONDENSERWATER,
+system - control,BMS,0,,IfcDistributionSystemCONTROL,
+system - conveying,CONVEY,0,,IfcDistributionSystemCONVEYING,
+system - domesticcoldwater,MCW,0,,IfcDistributionSystemDOMESTICCOLDWATER,
+system - domestichotwater,DHW,0,,IfcDistributionSystemDOMESTICHOTWATER,
+system - drainage,DRNG,0,,IfcDistributionSystemDRAINAGE,
+system - earthing,EARTH,0,,IfcDistributionSystemEARTHING,
+system - electrical,LV,0,,IfcDistributionSystemELECTRICAL,
+system - electroacoustic,AUDIO,0,,IfcDistributionSystemELECTROACOUSTIC,
+system - exhaust,EA,0,,IfcDistributionSystemEXHAUST,
+system - fireprotection,SPR,0,,IfcDistributionSystemFIREPROTECTION,
+system - fuel,FUEL,0,,IfcDistributionSystemFUEL,
+system - gas,GAS,0,,IfcDistributionSystemGAS,
+system - hazardous,HAZ,0,,IfcDistributionSystemHAZARDOUS,
+system - heating,LTHW,0,,IfcDistributionSystemHEATING,
+system - lighting,LTG,0,,IfcDistributionSystemLIGHTING,
+system - lightningprotection,LPROT,0,,IfcDistributionSystemLIGHTNINGPROTECTION,
+system - mobilenetwork,MOB,0,,IfcDistributionSystemMOBILENETWORK,
+system - monitoringsystem,MON,0,,IfcDistributionSystemMONITORINGSYSTEM,
+system - municipalsolidwaste,WSTSOL,0,,IfcDistributionSystemMUNICIPALSOLIDWASTE,
+system - oil,OIL,0,,IfcDistributionSystemOIL,
+system - operational,OPSUP,0,,IfcDistributionSystemOPERATIONAL,
+system - operationaltelephonysystem,PHON,0,,IfcDistributionSystemOPERATIONALTELEPHONYSYSTEM,
+system - overhead_contactline_system,OVER,0,,IfcDistributionSystemOVERHEAD_CONTACTLINE_SYSTEM,
+system - powergeneration,EGEN,0,,IfcDistributionSystemPOWERGENERATION,
+system - rainwater,RW,0,,IfcDistributionSystemRAINWATER,
+system - refrigeration,RF,0,,IfcDistributionSystemREFRIGERATION,
+system - return_circuit,RETCIR,0,,IfcDistributionSystemRETURN_CIRCUIT,
+system - security,SEC,0,,IfcDistributionSystemSECURITY,
+system - sewage,SWG,0,,IfcDistributionSystemSEWAGE,
+system - signal,SIG,0,,IfcDistributionSystemSIGNAL,
+system - stormwater,STORM,0,,IfcDistributionSystemSTORMWATER,
+system - telephone,TELE,0,,IfcDistributionSystemTELEPHONE,
+system - tv,TV,0,,IfcDistributionSystemTV,
+system - vacuum,VAC,0,,IfcDistributionSystemVACUUM,
+system - vent,VENTP,0,,IfcDistributionSystemVENT,
+system - ventilation,VENT,0,,IfcDistributionSystemVENTILATION,
+system - wastewater,WSTWAT,0,,IfcDistributionSystemWASTEWATER,
+system - watersupply,WATSUP,0,,IfcDistributionSystemWATERSUPPLY
