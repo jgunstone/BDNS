@@ -1,94 +1,10 @@
 [
   {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html",
-    "href": "BDNS_Scoping_guidelines_and_principles.html",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "",
-    "text": "Status: release 2.0.2rc1"
-  },
-  {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html#context-and-background",
-    "href": "BDNS_Scoping_guidelines_and_principles.html#context-and-background",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "Context and background",
-    "text": "Context and background\nBuilding data is currently structured in many different ways, with no single standard. Although several attempts have been made to introduce a universal standard, these have not been universally adopted, and have often found to be insufficiently detailed to allow automated acquisition and surfacing of data from device (both input and outputs), into a structured database for use in end user and building operator applications.\nThe lack of standardised naming and labelling for building devices from design to operation means we are failing to leverage the value of data to allow interoperability, improve building efficiency/operations and increase occupant productivity and happiness.\nA naming and labelling standard (complementing other industry initiatives) will simplify and drive consistency, thus increasing value by unlocking the application of technologies such as machine learning."
-  },
-  {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html#purpose",
-    "href": "BDNS_Scoping_guidelines_and_principles.html#purpose",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "Purpose",
-    "text": "Purpose\nThis project intends to provide an industry wide naming convention framework for Information Technology (IT), Mechanical, Electrical and Public Health (MEP), and other Operational Technology (OT) devices and assets within buildings.\nWe believe that sharing data in an open and secure way would be a significant benefit for the industry, and is an important first step in being able to normalise data interactions in the future.\nBeing able to efficiently collect, analyse and leverage data insights from buildings is a catalyst for optimising building performance, improving the use of resources and moving towards predictive maintenance and buildings that can respond to the climate emergency.\nThere is a number of initiatives around naming and tagging already in the industry, namely:\n\nIFC (building information modelling)\nUniclass and Uniclass2 (asset management)\nOmniclass (asset management)\nCIBSE Symbols\nUDMI (IoT device communication encoding)\nWeb of Things (IoT device communication encoding)\nHyperCat (IoT device communication encoding)\nProject Haystack (tagging and linked data for control system)\nBrick Schema (linked data for control systems)\nDigital Buildings Ontology\n\nThe intent is not to replace these standards or create an overarching umbrella standard on top of existing initiatives, but to create a convention that is complementary and can address the correct naming of control system devices and associated maintainable assets (within the framework) from the early design stages through to operation, while ensuring relevance and suitability to all design and operational building stakeholders."
-  },
-  {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html#scope",
-    "href": "BDNS_Scoping_guidelines_and_principles.html#scope",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "Scope",
-    "text": "Scope\nThe scope of this project is very focused: to provide an open naming convention and associated specifications for the naming of building control devices and associated items (within the defined framework) within buildings.\nFor the purpose of this standard, the definition of building control devices is any equipment that can change state and is monitored within a building.\nExample of controls devices are:\n\ntemperature sensors,\nfan coil units,\nVAV boxes,\npumps,\nluminaires.\n\nAssociated items are:\n\nmanual devices that require maintenance or are used to setup a system - e.g. commissioning sets, regulating valves etc.\narchitectural elements that may have a building control device associated with it - e.g. a door or a window.\n\nThe naming standard is applicable to fixed equipment only. Mobile equipment such as desk modules and portable sensors are not considered devices in the context of this project and therefore the naming convention is not applicable.\nComponents that are part of a device, such as fan coil unit valves and controllers are not considered to be standalone devices, and therefore do not need individual names. Their data points can however be described and named using complementary standards such as Project Haystack, Brick Schema and the Digital Buildings Ontology."
-  },
-  {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html#deliverables",
-    "href": "BDNS_Scoping_guidelines_and_principles.html#deliverables",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "Deliverables",
-    "text": "Deliverables\nThe following documents have been developed as part of the scope:\n\nA specification for the naming syntax\nA register of building device and asset type abbreviations\nA governance model for the initiative"
-  },
-  {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html#principles",
-    "href": "BDNS_Scoping_guidelines_and_principles.html#principles",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "Principles",
-    "text": "Principles\nThe guiding principles for the standard are the following:\n\nGranularity should be guided by defining the level of experience of people that have to apply naming.\nGranularity should avoid ambiguity, introduce context and be what most people in industry would do.\nThe device identity and naming must remain consistent across the lifecycle of the device, throughout the design, construction and operational phases in order to enable seamless data transfer across phases.\n\nOur recommendation is to store data in shared repositories and not standalone systems, and follow three key principles in data exchange:\n\nUtilisation of open standards\nConsistency of device identity across phases\nTransfer of design parameters from design model to operational models"
-  },
-  {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html#process",
-    "href": "BDNS_Scoping_guidelines_and_principles.html#process",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "Process",
-    "text": "Process\nThe proposed governance principles and change process are documented in the Building Device and Asset Naming Standard Proposed Governance document. The document includes information on the open licensing of the work being driven by this initiative, communication mechanisms and a process for consensus building.\nIn practice, the proposed change process will rely on the GitHub platform:\n\nChanges to the syntax can be proposed by submitting an issue on the Github platform. Issues will be discussed and resolved on GitHub, and may be discussed additionally through the other communication mechanisms of the group, including mailing-list and semi-regular teleconferences.\nAdditions to the register can be proposed by submitting a pull request (PR) to the Github repository. Alternative submission mechanisms (e.g. through a mail address) may be made available if the Github PR mechanisms are deemed too technical."
-  },
-  {
-    "objectID": "BDNS_Scoping_guidelines_and_principles.html#future-work",
-    "href": "BDNS_Scoping_guidelines_and_principles.html#future-work",
-    "title": "Building Device and Asset Naming Standards initiative",
-    "section": "Future work",
-    "text": "Future work\nThe intention is for this work to develop further to cover standardisation of naming for maintainable assets, but to exclude the naming of metadata and data points, which are meant to be named with a complementary standard, as discussed above.\nFor the purpose of this standard, the definition of a control point is any data associated with a named building control device that one can read from or write to. Examples of control point:\n\nopen/close position for valve,\nlighting level.\n\nFor the purpose of this standard, the definition of metadata is data associated with an asset that provide information about its attributes. Examples of metadata:\n\nmanufacturer label,\ndevice model label,\nmemory capacity."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BDNS",
-    "section": "",
-    "text": "Status: release 2.0.2rc1\nThis repository holds resources for an initiative to improve interoperability in building management, by focusing on standardising naming of building devices and assets.\nAchieving a common standard across building devices’ naming is an important first step towards being able to efficiently collect, analyse and capture data insights from buildings, and thus optimise building performance to reduce the operational cost and environmental impact of managing buildings.\nLonger-term, this sets the groundwork for real industry collaboration - with the potential to create industry-wide benchmarking, and to facilitate trading of buildings between portfolios.\nA naming and labelling standard (complementing other industry initiatives ) will simplify and drive consistency, thus increasing value by unlocking the application of technologies such as machine learning.\nThe work of this community group aligns with and complements other initiatives in the industry such as:\n\nIFC\nUniclass and Uniclass2\nOmniclass\nCIBSE Symbols\nUDMI\nWeb of Things\nHyperCat\nProject Haystack\nBrick Schema\nDigital Buildings Ontology\n\nIn scope for this work are: - A specification for naming syntax - A register of building device type abbreviations\nThe register of building device type abbreviations includes the following columns:\n\nasset_description - a desription of what is named; the description typically includes a category when the level of granularity of the abbreviation is more specific\nasset_abbreviation - the BDNS abbreviation itself\ncan_be_connected - a boolean value that distinguishes between assets that do not include any means of network connectivity and connectable devices\ndbo_entity_type - the Digital Buildings Ontology namespace and entity type that can be associated to the BDNS abbreviation; NOTE: while BDNS presupposes that modelers will apply abbreviations consistently based on similar domain expertise, DBO does not; instead, it provides definitions for devices which may have overlapping function or where terms are ambiguous. For example, while a BDNS user may find the distinction between AHU, ACU, and RTU to be meaningful, DBO does consider all of these as classes of AHU (and provides a definition for what an AHU is.\nifc_class - the IFC class that can be associated to the BDNS abbreviation\nifc_type - the specific IFC type associated to the IFC class that can be associated to the BDNS abbreviation\n\nThe comparison columns have the purpose of providing a simple means to correlate the naming of instances with ontology objects that are present in different building services and systems related ontologies, like the Digital Buildings Ontology and IFC.\n\n\nThe device and asset names defined in this standard are meant to be used in the following applications:\n\nnaming of CAD object instances in drawings\nnaming of object instances in BIM models\nnaming of control devices in control software (for instance BACnet device names)\nnaming of assets in asset management systems\nnaming of devices in IoT ingestion systems\nnaming of devices and assets in databases\nnaming of devices and assets in MQTT topics\n\n\n\n\n\nCurrently we only serve the latest version of the BDNS built website and pdf documents.\nThe source markdown files of previous versions can be reviewed by referring to the appropriate Github tag/release.\n\ne.g. BDNS=1.2.0 = https://github.com/theodi/BDNS/tree/1.2.0 for the source files of v1.2.0\ne.g. BDNS_Specification_naming_syntax=1.2.0 = https://github.com/theodi/BDNS/blob/1.2.0/BDNS_Specification_naming_syntax.md for a specific version of a document\n\nThe BDNS_Abbreviations_Register.csv data file can also be retrieved directly from a previous tag/release if you are required to pin to a given version.\n\ne.g. BDNS_Abbreviations_Register.csv=1.2.0 = https://raw.githubusercontent.com/theodi/BDNS/1.2.0/BDNS_Abbreviations_Register.csv\n\n\n\n\n\nThe standard is primarily focusing on naming of building control devices, but with its growing usage it also includes a number of maintainable asset names and types."
-  },
-  {
-    "objectID": "index.html#use",
-    "href": "index.html#use",
-    "title": "BDNS",
-    "section": "",
-    "text": "The device and asset names defined in this standard are meant to be used in the following applications:\n\nnaming of CAD object instances in drawings\nnaming of object instances in BIM models\nnaming of control devices in control software (for instance BACnet device names)\nnaming of assets in asset management systems\nnaming of devices in IoT ingestion systems\nnaming of devices and assets in databases\nnaming of devices and assets in MQTT topics"
-  },
-  {
-    "objectID": "index.html#past-versions",
-    "href": "index.html#past-versions",
-    "title": "BDNS",
-    "section": "",
-    "text": "Currently we only serve the latest version of the BDNS built website and pdf documents.\nThe source markdown files of previous versions can be reviewed by referring to the appropriate Github tag/release.\n\ne.g. BDNS=1.2.0 = https://github.com/theodi/BDNS/tree/1.2.0 for the source files of v1.2.0\ne.g. BDNS_Specification_naming_syntax=1.2.0 = https://github.com/theodi/BDNS/blob/1.2.0/BDNS_Specification_naming_syntax.md for a specific version of a document\n\nThe BDNS_Abbreviations_Register.csv data file can also be retrieved directly from a previous tag/release if you are required to pin to a given version.\n\ne.g. BDNS_Abbreviations_Register.csv=1.2.0 = https://raw.githubusercontent.com/theodi/BDNS/1.2.0/BDNS_Abbreviations_Register.csv"
-  },
-  {
-    "objectID": "index.html#note",
-    "href": "index.html#note",
-    "title": "BDNS",
-    "section": "",
-    "text": "The standard is primarily focusing on naming of building control devices, but with its growing usage it also includes a number of maintainable asset names and types."
-  },
-  {
     "objectID": "BDNS_Governance_model.html",
     "href": "BDNS_Governance_model.html",
     "title": "Building Device and Asset Naming Standards initiative",
     "section": "",
-    "text": "Status: release 2.0.2rc1"
+    "text": "Status: release 2.1.0-rc1"
   },
   {
     "objectID": "BDNS_Governance_model.html#background",
@@ -158,14 +74,14 @@
     "href": "release.html",
     "title": "",
     "section": "",
-    "text": "Status: release 2.0.2rc1"
+    "text": "Status: release 2.1.0-rc1"
   },
   {
     "objectID": "BDNS_Specification_naming_syntax.html",
     "href": "BDNS_Specification_naming_syntax.html",
     "title": "Building Device and Asset Naming Standards initiative",
     "section": "",
-    "text": "Status: release 2.0.2rc1"
+    "text": "Status: release 2.1.0-rc1"
   },
   {
     "objectID": "BDNS_Specification_naming_syntax.html#purpose-and-scope",
@@ -208,5 +124,89 @@
     "title": "Building Device and Asset Naming Standards initiative",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nNote that the IFC standard is slightly different than the web-standard base64 encoding, specifically using _ and $ instead of / and +.↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BDNS",
+    "section": "",
+    "text": "Status: release 2.1.0-rc1\nThis repository holds resources for an initiative to improve interoperability in building management, by focusing on standardising naming of building devices and assets.\nAchieving a common standard across building devices’ naming is an important first step towards being able to efficiently collect, analyse and capture data insights from buildings, and thus optimise building performance to reduce the operational cost and environmental impact of managing buildings.\nLonger-term, this sets the groundwork for real industry collaboration - with the potential to create industry-wide benchmarking, and to facilitate trading of buildings between portfolios.\nA naming and labelling standard (complementing other industry initiatives ) will simplify and drive consistency, thus increasing value by unlocking the application of technologies such as machine learning.\nThe work of this community group aligns with and complements other initiatives in the industry such as:\n\nIFC\nUniclass and Uniclass2\nOmniclass\nCIBSE Symbols\nUDMI\nWeb of Things\nHyperCat\nProject Haystack\nBrick Schema\nDigital Buildings Ontology\n\nIn scope for this work are: - A specification for naming syntax - A register of building device type abbreviations\nThe register of building device type abbreviations includes the following columns:\n\nasset_description - a desription of what is named; the description typically includes a category when the level of granularity of the abbreviation is more specific\nasset_abbreviation - the BDNS abbreviation itself\ncan_be_connected - a boolean value that distinguishes between assets that do not include any means of network connectivity and connectable devices\ndbo_entity_type - the Digital Buildings Ontology namespace and entity type that can be associated to the BDNS abbreviation; NOTE: while BDNS presupposes that modelers will apply abbreviations consistently based on similar domain expertise, DBO does not; instead, it provides definitions for devices which may have overlapping function or where terms are ambiguous. For example, while a BDNS user may find the distinction between AHU, ACU, and RTU to be meaningful, DBO does consider all of these as classes of AHU (and provides a definition for what an AHU is.\nifc_class - the IFC class that can be associated to the BDNS abbreviation\nifc_type - the specific IFC type associated to the IFC class that can be associated to the BDNS abbreviation\n\nThe comparison columns have the purpose of providing a simple means to correlate the naming of instances with ontology objects that are present in different building services and systems related ontologies, like the Digital Buildings Ontology and IFC.\n\n\nThe device and asset names defined in this standard are meant to be used in the following applications:\n\nnaming of CAD object instances in drawings\nnaming of object instances in BIM models\nnaming of control devices in control software (for instance BACnet device names)\nnaming of assets in asset management systems\nnaming of devices in IoT ingestion systems\nnaming of devices and assets in databases\nnaming of devices and assets in MQTT topics\n\n\n\n\n\nCurrently we only serve the latest version of the BDNS built website and pdf documents.\nThe source markdown files of previous versions can be reviewed by referring to the appropriate Github tag/release.\n\ne.g. BDNS=1.2.0 = https://github.com/theodi/BDNS/tree/1.2.0 for the source files of v1.2.0\ne.g. BDNS_Specification_naming_syntax=1.2.0 = https://github.com/theodi/BDNS/blob/1.2.0/BDNS_Specification_naming_syntax.md for a specific version of a document\n\nThe BDNS_Abbreviations_Register.csv data file can also be retrieved directly from a previous tag/release if you are required to pin to a given version.\n\ne.g. BDNS_Abbreviations_Register.csv=1.2.0 = https://raw.githubusercontent.com/theodi/BDNS/1.2.0/BDNS_Abbreviations_Register.csv\n\n\n\n\n\nThe standard is primarily focusing on naming of building control devices, but with its growing usage it also includes a number of maintainable asset names and types."
+  },
+  {
+    "objectID": "index.html#use",
+    "href": "index.html#use",
+    "title": "BDNS",
+    "section": "",
+    "text": "The device and asset names defined in this standard are meant to be used in the following applications:\n\nnaming of CAD object instances in drawings\nnaming of object instances in BIM models\nnaming of control devices in control software (for instance BACnet device names)\nnaming of assets in asset management systems\nnaming of devices in IoT ingestion systems\nnaming of devices and assets in databases\nnaming of devices and assets in MQTT topics"
+  },
+  {
+    "objectID": "index.html#past-versions",
+    "href": "index.html#past-versions",
+    "title": "BDNS",
+    "section": "",
+    "text": "Currently we only serve the latest version of the BDNS built website and pdf documents.\nThe source markdown files of previous versions can be reviewed by referring to the appropriate Github tag/release.\n\ne.g. BDNS=1.2.0 = https://github.com/theodi/BDNS/tree/1.2.0 for the source files of v1.2.0\ne.g. BDNS_Specification_naming_syntax=1.2.0 = https://github.com/theodi/BDNS/blob/1.2.0/BDNS_Specification_naming_syntax.md for a specific version of a document\n\nThe BDNS_Abbreviations_Register.csv data file can also be retrieved directly from a previous tag/release if you are required to pin to a given version.\n\ne.g. BDNS_Abbreviations_Register.csv=1.2.0 = https://raw.githubusercontent.com/theodi/BDNS/1.2.0/BDNS_Abbreviations_Register.csv"
+  },
+  {
+    "objectID": "index.html#note",
+    "href": "index.html#note",
+    "title": "BDNS",
+    "section": "",
+    "text": "The standard is primarily focusing on naming of building control devices, but with its growing usage it also includes a number of maintainable asset names and types."
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html",
+    "href": "BDNS_Scoping_guidelines_and_principles.html",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "",
+    "text": "Status: release 2.1.0-rc1"
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html#context-and-background",
+    "href": "BDNS_Scoping_guidelines_and_principles.html#context-and-background",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "Context and background",
+    "text": "Context and background\nBuilding data is currently structured in many different ways, with no single standard. Although several attempts have been made to introduce a universal standard, these have not been universally adopted, and have often found to be insufficiently detailed to allow automated acquisition and surfacing of data from device (both input and outputs), into a structured database for use in end user and building operator applications.\nThe lack of standardised naming and labelling for building devices from design to operation means we are failing to leverage the value of data to allow interoperability, improve building efficiency/operations and increase occupant productivity and happiness.\nA naming and labelling standard (complementing other industry initiatives) will simplify and drive consistency, thus increasing value by unlocking the application of technologies such as machine learning."
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html#purpose",
+    "href": "BDNS_Scoping_guidelines_and_principles.html#purpose",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "Purpose",
+    "text": "Purpose\nThis project intends to provide an industry wide naming convention framework for Information Technology (IT), Mechanical, Electrical and Public Health (MEP), and other Operational Technology (OT) devices and assets within buildings.\nWe believe that sharing data in an open and secure way would be a significant benefit for the industry, and is an important first step in being able to normalise data interactions in the future.\nBeing able to efficiently collect, analyse and leverage data insights from buildings is a catalyst for optimising building performance, improving the use of resources and moving towards predictive maintenance and buildings that can respond to the climate emergency.\nThere is a number of initiatives around naming and tagging already in the industry, namely:\n\nIFC (building information modelling)\nUniclass and Uniclass2 (asset management)\nOmniclass (asset management)\nCIBSE Symbols\nUDMI (IoT device communication encoding)\nWeb of Things (IoT device communication encoding)\nHyperCat (IoT device communication encoding)\nProject Haystack (tagging and linked data for control system)\nBrick Schema (linked data for control systems)\nDigital Buildings Ontology\n\nThe intent is not to replace these standards or create an overarching umbrella standard on top of existing initiatives, but to create a convention that is complementary and can address the correct naming of control system devices and associated maintainable assets (within the framework) from the early design stages through to operation, while ensuring relevance and suitability to all design and operational building stakeholders."
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html#scope",
+    "href": "BDNS_Scoping_guidelines_and_principles.html#scope",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "Scope",
+    "text": "Scope\nThe scope of this project is very focused: to provide an open naming convention and associated specifications for the naming of building control devices and associated items (within the defined framework) within buildings.\nFor the purpose of this standard, the definition of building control devices is any equipment that can change state and is monitored within a building.\nExample of controls devices are:\n\ntemperature sensors,\nfan coil units,\nVAV boxes,\npumps,\nluminaires.\n\nAssociated items are:\n\nmanual devices that require maintenance or are used to setup a system - e.g. commissioning sets, regulating valves etc.\narchitectural elements that may have a building control device associated with it - e.g. a door or a window.\n\nThe naming standard is applicable to fixed equipment only. Mobile equipment such as desk modules and portable sensors are not considered devices in the context of this project and therefore the naming convention is not applicable.\nComponents that are part of a device, such as fan coil unit valves and controllers are not considered to be standalone devices, and therefore do not need individual names. Their data points can however be described and named using complementary standards such as Project Haystack, Brick Schema and the Digital Buildings Ontology."
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html#deliverables",
+    "href": "BDNS_Scoping_guidelines_and_principles.html#deliverables",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "Deliverables",
+    "text": "Deliverables\nThe following documents have been developed as part of the scope:\n\nA specification for the naming syntax\nA register of building device and asset type abbreviations\nA governance model for the initiative"
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html#principles",
+    "href": "BDNS_Scoping_guidelines_and_principles.html#principles",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "Principles",
+    "text": "Principles\nThe guiding principles for the standard are the following:\n\nGranularity should be guided by defining the level of experience of people that have to apply naming.\nGranularity should avoid ambiguity, introduce context and be what most people in industry would do.\nThe device identity and naming must remain consistent across the lifecycle of the device, throughout the design, construction and operational phases in order to enable seamless data transfer across phases.\n\nOur recommendation is to store data in shared repositories and not standalone systems, and follow three key principles in data exchange:\n\nUtilisation of open standards\nConsistency of device identity across phases\nTransfer of design parameters from design model to operational models"
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html#process",
+    "href": "BDNS_Scoping_guidelines_and_principles.html#process",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "Process",
+    "text": "Process\nThe proposed governance principles and change process are documented in the Building Device and Asset Naming Standard Proposed Governance document. The document includes information on the open licensing of the work being driven by this initiative, communication mechanisms and a process for consensus building.\nIn practice, the proposed change process will rely on the GitHub platform:\n\nChanges to the syntax can be proposed by submitting an issue on the Github platform. Issues will be discussed and resolved on GitHub, and may be discussed additionally through the other communication mechanisms of the group, including mailing-list and semi-regular teleconferences.\nAdditions to the register can be proposed by submitting a pull request (PR) to the Github repository. Alternative submission mechanisms (e.g. through a mail address) may be made available if the Github PR mechanisms are deemed too technical."
+  },
+  {
+    "objectID": "BDNS_Scoping_guidelines_and_principles.html#future-work",
+    "href": "BDNS_Scoping_guidelines_and_principles.html#future-work",
+    "title": "Building Device and Asset Naming Standards initiative",
+    "section": "Future work",
+    "text": "Future work\nThe intention is for this work to develop further to cover standardisation of naming for maintainable assets, but to exclude the naming of metadata and data points, which are meant to be named with a complementary standard, as discussed above.\nFor the purpose of this standard, the definition of a control point is any data associated with a named building control device that one can read from or write to. Examples of control point:\n\nopen/close position for valve,\nlighting level.\n\nFor the purpose of this standard, the definition of metadata is data associated with an asset that provide information about its attributes. Examples of metadata:\n\nmanufacturer label,\ndevice model label,\nmemory capacity."
   }
 ]
