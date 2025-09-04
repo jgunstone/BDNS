@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>release</title>
+<title>bdns_bsdd</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -36,14 +71,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f817a633b5deadc5d46f36131a2c745b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-a8fd922797be02938d170e303f190fd1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f817a633b5deadc5d46f36131a2c745b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9fc1429bc3b332e86a9ab77486218281.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b03cbe7f021218c5dd899074d606723d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9fc1429bc3b332e86a9ab77486218281.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,6 +106,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -278,6 +315,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./BDNS_Abbreviations_Core.html"> 
 <span class="menu-text">Abbreviations Core</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./BDNS_BSDD.html" aria-current="page"> 
+<span class="menu-text">BDNS on BSDD</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -297,8 +338,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#building-device-and-asset-naming-standards-initiative" id="toc-building-device-and-asset-naming-standards-initiative" class="nav-link active" data-scroll-target="#building-device-and-asset-naming-standards-initiative">Building Device and Asset Naming Standards initiative</a></li>
+  <li><a href="#bdns-on-bsdd-building-smart-data-dictionaries" id="toc-bdns-on-bsdd-building-smart-data-dictionaries" class="nav-link" data-scroll-target="#bdns-on-bsdd-building-smart-data-dictionaries">BDNS on BSDD (Building Smart Data Dictionaries)</a>
+  <ul class="collapse">
+  <li><a href="#keeping-the-bsdd-up-to-date" id="toc-keeping-the-bsdd-up-to-date" class="nav-link" data-scroll-target="#keeping-the-bsdd-up-to-date">Keeping the BSDD up-to-date</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/theodi/BDNS/edit/main/BDNS_BSDD.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/theodi/BDNS/blob/main/BDNS_BSDD.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/theodi/BDNS/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -307,11 +358,65 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<!-- This file exists for development only, without local testing fails. It is overwritten when the site is built with the current GH release. -->
+<section id="building-device-and-asset-naming-standards-initiative" class="level1">
+<h1>Building Device and Asset Naming Standards initiative</h1>
+<p>Status: <em>release</em> 2.1.1-rc4</p>
+</section>
+<section id="bdns-on-bsdd-building-smart-data-dictionaries" class="level1">
+<h1>BDNS on BSDD (Building Smart Data Dictionaries)</h1>
+<p>In the summer of 2025 there was a concerted effort between BDNS, IFC and Building Smart to add the BDNS abbreviations to the BSDD.</p>
+<p>🚀 The dictionary is now available here: <strong><a href="https://identifier.buildingsmart.org/uri/bdns">https://identifier.buildingsmart.org/uri/bdns</a></strong> 🚀</p>
+<section id="keeping-the-bsdd-up-to-date" class="level2">
+<h2 class="anchored" data-anchor-id="keeping-the-bsdd-up-to-date">Keeping the BSDD up-to-date</h2>
+<p>There is a <a href="https://github.com/theodi/BDNS/issues/365">plan to publish on tag…</a> but until that is ready please do the following:</p>
+<ol type="1">
+<li>Go to the built docs and download the bsdd import file:</li>
+</ol>
+<ul>
+<li><a href="https://github.com/theodi/BDNS/blob/gh-pages/bsdd-import-bdns.json">https://github.com/theodi/BDNS/blob/gh-pages/bsdd-import-bdns.json</a></li>
+</ul>
+<ol start="2" type="1">
+<li>Go to the BSDD manage page and upload the file.</li>
+</ol>
+<ul>
+<li><a href="https://manage.bsdd.buildingsmart.org/dictionaries">https://manage.bsdd.buildingsmart.org/dictionaries</a></li>
+</ul>
+<p>For info, the import json can be inspected here:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" data-startfrom="27" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 26;"><span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>bsdd_import_bdns <span class="op">=</span> <span class="cf">await</span> <span class="fu">FileAttachment</span>(<span class="st">"tools/bsdd-import-bdns.json"</span>)<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>bsdd_import_bdns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImJzZGRfaW1wb3J0X2JkbnMgPSBhd2FpdCBGaWxlQXR0YWNobWVudChcInRvb2xzL2JzZGQtaW1wb3J0LWJkbnMuanNvblwiKS5qc29uKCk7XG5ic2RkX2ltcG9ydF9iZG5zXG4ifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -729,4 +834,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/theodi/BDNS/edit/main/release.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/theodi/BDNS/blob/main/release.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/theodi/BDNS/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/theodi/BDNS/edit/main/BDNS_BSDD.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/theodi/BDNS/blob/main/BDNS_BSDD.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/theodi/BDNS/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
